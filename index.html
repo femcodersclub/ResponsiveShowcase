@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Showcase - femCodersClub</title>
+    <link rel="stylesheet" href="styles.css">
+
+       
+</head>
+<body>
+    <header class="header">
+        <h1>🌟 Responsive Showcase</h1>
+        <p>Análisis de técnicas responsive en sitios web reales - femCodersClub</p>
+    </header>
+
+<div class="debug-panel">
+    <h4>📊 Debug Info</h4>
+    <div class="debug-item">
+        <span>Viewport:</span>
+        <strong id="viewport-size">0px</strong>
+    </div>
+    <div class="debug-item">
+        <span>Breakpoint:</span>
+        <strong id="current-breakpoint">Desktop</strong>
+    </div>
+    <div class="debug-item">
+        <span>Device:</span>
+        <strong id="device-type">Desktop</strong>
+    </div>
+    <div class="debug-item">
+        <span>Orientation:</span>
+        <strong id="orientation">Landscape</strong>
+    </div>
+</div>
+
+      
+    </div>
+
+    <div class="container">
+        <div class="intro">
+            <h2>🎯 Aprende Responsive Design con Ejemplos Reales</h2>
+            <p>En lugar de crear demos artificiales, analizamos sitios web que usas todos los días. Descubre cómo implementan responsive design las mejores empresas del mundo.</p>
+        </div>
+
+        <!-- Nivel Básico -->
+        <div class="section-header">
+            <h2>📱 Nivel Básico: Fundamentos</h2>
+            <p>Conceptos esenciales y comparación de enfoques</p>
+        </div>
+
+        <div class="examples-grid">
+            <div class="example-card">
+                <div class="category-tag beginner">Principiante</div>
+                <h3>🖥️ Desktop-First vs Mobile-First</h3>
+                <p>Compara cómo diferentes sitios abordan el responsive design. Analiza femCodersClub (desktop-first) vs sitios modernos (mobile-first).</p>
+                <div class="example-links">
+                    <a href="https://femcodersclub.com" target="_blank" rel="noopener" class="example-link">
+                        🖥️ femCodersClub
+                    </a>
+                    <a href="https://stripe.com" target="_blank" rel="noopener" class="example-link">
+                        📱 Stripe (Mobile-First)
+                    </a>
+                    <a href="https://web.dev/responsive-web-design-basics/" target="_blank" rel="noopener" class="example-link secondary">
+                        📚 Guía Web.dev
+                    </a>
+                </div>
+            </div>
+
+            <div class="example-card">
+                <div class="category-tag beginner">Principiante</div>
+                <h3>📏 Breakpoints Comunes</h3>
+                <p>Analiza los breakpoints que usan sitios populares y por qué los eligen. Abre DevTools y redimensiona para ver los cambios.</p>
+                <div class="example-links">
+                    <a href="https://getbootstrap.com" target="_blank" rel="noopener" class="example-link">
+                        🎨 Bootstrap
+                    </a>
+                    <a href="https://tailwindcss.com" target="_blank" rel="noopener" class="example-link">
+                        🎨 Tailwind CSS
+                    </a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries" target="_blank" rel="noopener" class="example-link secondary">
+                        📖 MDN Media Queries
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nivel Intermedio -->
+        <div class="section-header">
+            <h2>🏗️ Nivel Intermedio: Layouts Flexibles</h2>
+            <p>Técnicas de grid, flexbox e imágenes responsivas</p>
+        </div>
+
+        <div class="examples-grid">
+            <div class="example-card">
+                <div class="category-tag intermediate">Intermedio</div>
+                <h3>🎯 Grid CSS en Acción</h3>
+                <p>Observa cómo sitios reales usan CSS Grid para crear layouts complejos que se adaptan perfectamente.</p>
+                <div class="example-links">
+                    <a href="https://css-tricks.com" target="_blank" rel="noopener" class="example-link">
+                        📝 CSS-Tricks
+                    </a>
+                    <a href="https://www.pinterest.com" target="_blank" rel="noopener" class="example-link">
+                        📌 Pinterest (Masonry)
+                    </a>
+                    <a href="https://grid.layoutit.com" target="_blank" rel="noopener" class="example-link secondary">
+                        🛠️ Grid Generator
+                    </a>
+                </div>
+            </div>
+
+            <div class="example-card">
+                <div class="category-tag intermediate">Intermedio</div>
+                <h3>🖼️ Imágenes Responsivas</h3>
+                <p>Analiza cómo sitios como Unsplash y Instagram manejan imágenes que se ven perfectas en cualquier dispositivo.</p>
+                <div class="example-links">
+                    <a href="https://unsplash.com" target="_blank" rel="noopener" class="example-link">
+                        📷 Unsplash
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener" class="example-link">
+                        📱 Instagram
+                    </a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images" target="_blank" rel="noopener" class="example-link secondary">
+                        📖 MDN Responsive Images
+                    </a>
+                </div>
+            </div>
+
+            <div class="example-card">
+                <div class="category-tag intermediate">Intermedio</div>
+                <h3>🧭 Navegación Adaptativa</h3>
+                <p>Estudia cómo evolucionan los menús de navegación desde desktop (horizontal) hasta móvil (hamburger).</p>
+                <div class="example-links">
+                    <a href="https://github.com" target="_blank" rel="noopener" class="example-link">
+                        🐙 GitHub
+                    </a>
+                    <a href="https://airbnb.com" target="_blank" rel="noopener" class="example-link">
+                        🏠 Airbnb
+                    </a>
+                    <a href="https://codepen.io/search/pens?q=responsive%20navigation" target="_blank" rel="noopener" class="example-link secondary">
+                        🖊️ CodePen Examples
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nivel Avanzado -->
+        <div class="section-header">
+            <h2>🚀 Nivel Avanzado: Técnicas Modernas</h2>
+            <p>Container queries, tipografía fluida y optimizaciones</p>
+        </div>
+
+        <div class="examples-grid">
+            <div class="example-card">
+                <div class="category-tag advanced">Avanzado</div>
+                <h3>📦 Container Queries</h3>
+                <p>La técnica más moderna de responsive design. Componentes que se adaptan a su contenedor, no al viewport.</p>
+                <div class="example-links">
+                    <a href="https://codepen.io/una/pen/mdqNbBQ" target="_blank" rel="noopener" class="example-link">
+                        🎨 Demo de Una Kravets
+                    </a>
+                    <a href="https://developer.chrome.com/blog/has-with-cq-m105/" target="_blank" rel="noopener" class="example-link">
+                        🌐 Chrome Developers
+                    </a>
+                    <a href="https://caniuse.com/css-container-queries" target="_blank" rel="noopener" class="example-link secondary">
+                        ✅ Can I Use
+                    </a>
+                </div>
+            </div>
+
+            <div class="example-card">
+                <div class="category-tag advanced">Avanzado</div>
+                <h3>🔤 Tipografía Fluida con clamp()</h3>
+                <p>Texto que escala perfectamente sin breakpoints. Observa cómo sitios modernos implementan tipografía fluida.</p>
+                <div class="example-links">
+                    <a href="https://linear.app" target="_blank" rel="noopener" class="example-link">
+                        📐 Linear
+                    </a>
+                    <a href="https://www.apple.com" target="_blank" rel="noopener" class="example-link">
+                        🍎 Apple
+                    </a>
+                    <a href="https://fluid-typography.netlify.app/" target="_blank" rel="noopener" class="example-link secondary">
+                        🧮 Fluid Type Calculator
+                    </a>
+                </div>
+            </div>
+
+            <div class="example-card">
+                <div class="category-tag advanced">Avanzado</div>
+                <h3>🔍 Debugging y Performance</h3>
+                <p>Herramientas y técnicas para debuggear responsive design y optimizar la performance en móviles.</p>
+                <div class="example-links">
+                    <a href="https://developers.google.com/web/tools/chrome-devtools/device-mode" target="_blank" rel="noopener" class="example-link">
+                        🛠️ Chrome DevTools
+                    </a>
+                    <a href="https://web.dev/measure/" target="_blank" rel="noopener" class="example-link">
+                        ⚡ PageSpeed Insights
+                    </a>
+                    <a href="https://responsively.app/" target="_blank" rel="noopener" class="example-link secondary">
+                        📱 Responsively App
+                    </a>
+                </div>
+            </div>
+
+            <div class="example-card">
+                <div class="category-tag advanced">Avanzado</div>
+                <h3>✨ Micro-interacciones Responsivas</h3>
+                <p>Interacciones que se adaptan al dispositivo: hover en desktop, tap en móvil, gestos en tablets.</p>
+                <div class="example-links">
+                    <a href="https://www.framer.com" target="_blank" rel="noopener" class="example-link">
+                        🎬 Framer
+                    </a>
+                    <a href="https://dribbble.com" target="_blank" rel="noopener" class="example-link">
+                        🎨 Dribbble
+                    </a>
+                    <a href="https://codepen.io/collection/HtAne/" target="_blank" rel="noopener" class="example-link secondary">
+                        🖊️ Micro-interactions
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recursos Extra -->
+        <div class="section-header">
+            <h2>🎁 Recursos Extra</h2>
+            <p>Herramientas, guías y comunidades para seguir aprendiendo</p>
+        </div>
+
+        <div class="examples-grid">
+            <div class="example-card">
+                <div class="category-tag">Recursos</div>
+                <h3>🛠️ Herramientas de Desarrollo</h3>
+                <p>Las mejores herramientas para diseñar, prototipar y debuggear responsive design.</p>
+                <div class="example-links">
+                    <a href="https://www.figma.com" target="_blank" rel="noopener" class="example-link">
+                        🎨 Figma
+                    </a>
+                    <a href="https://responsively.app/" target="_blank" rel="noopener" class="example-link">
+                        📱 Responsively
+                    </a>
+                    <a href="https://polypane.app/" target="_blank" rel="noopener" class="example-link secondary">
+                        🖥️ Polypane
+                    </a>
+                </div>
+            </div>
+
+            <div class="example-card">
+                <div class="category-tag">Recursos</div>
+                <h3>📚 Documentación y Guías</h3>
+                <p>Las mejores fuentes de información actualizada sobre responsive design.</p>
+                <div class="example-links">
+                    <a href="https://web.dev/" target="_blank" rel="noopener" class="example-link">
+                        📖 Web.dev
+                    </a>
+                    <a href="https://css-tricks.com/guides/" target="_blank" rel="noopener" class="example-link">
+                        📝 CSS-Tricks Guides
+                    </a>
+                    <a href="https://smashingmagazine.com/category/responsive-design/" target="_blank" rel="noopener" class="example-link secondary">
+                        📰 Smashing Magazine
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-logo">
+                    <h3>🌟 ResponsiveShowcase</h3>
+                    <p>Proyecto educativo para aprender responsive design con ejemplos reales</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Aprende</h4>
+                        <ul>
+                            <li><a href="#basico">Nivel Básico</a></li>
+                            <li><a href="#intermedio">Nivel Intermedio</a></li>
+                            <li><a href="#avanzado">Nivel Avanzado</a></li>
+                            <li><a href="#recursos">Recursos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Comunidad</h4>
+                        <ul>
+                            <li><a href="https://femcodersclub.com" target="_blank" rel="noopener">🚀 femCodersClub</a></li>
+                            <li><a href="https://www.femcodersclub.com/blog/recursos" target="_blank" rel="noopener">📚 Reursos</a></li>
+                            <li><a href="https://femcodersclub.com/eventos" target="_blank" rel="noopener">🎉 Eventos</a></li>
+                            <li><a href="https://femcodersclub.com/blog" target="_blank" rel="noopener">✍️ Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Síguenos</h4>
+                        <ul>
+                            <li><a href="https://www.instagram.com/femcoders_club/" target="_blank" rel="noopener">📷 Instagram</a></li>
+                            <li><a href="https://www.linkedin.com/company/100394366/" target="_blank" rel="noopener">💼 LinkedIn</a></li>
+                            <li><a href="https://x.com/femcodersclub" target="_blank" rel="noopener">🕎 X</a></li>
+                            <li><a href="https://github.com/femcodersclub" target="_blank" rel="noopener">🐙 GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-credits">
+                    <p>Hecho con 💜 por <a href="https://femcodersclub.com" target="_blank" rel="noopener" class="femcoders-link">femCodersClub</a></p>
+                    <p>© 2025 ResponsiveShowcase - Material educativo gratuito</p>
+                </div>
+                <div class="footer-tech">
+                    <span class="tech-badge">HTML</span>
+                    <span class="tech-badge">CSS</span>
+                    <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">Responsive</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="main.js"></script>
+</body>
+</html>
