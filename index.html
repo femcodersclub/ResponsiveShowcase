@@ -4,50 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Showcase - femCodersClub</title>
-    <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="styles.css">
 
-       
 </head>
 <body>
     <header class="header">
-        <h1>🌟 Responsive Showcase</h1>
-        <p>Análisis de técnicas responsive en sitios web reales - femCodersClub</p>
+        <div class="header-content">
+            <a href="#" class="logo">
+                🌟 ResponsiveShowcase
+            </a>
+            
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#basico">Básico</a></li>
+                    <li><a href="#intermedio">Intermedio</a></li>
+                    <li><a href="#avanzado">Avanzado</a></li>
+                    <li><a href="#recursos">Recursos</a></li>
+                    <li><a href="https://femcodersclub.com" target="_blank" rel="noopener">femCodersClub</a></li>
+                </ul>
+                
+                <button class="hamburger" id="hamburger" aria-label="Abrir menú de navegación">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
     </header>
 
-<div class="debug-panel">
-    <h4>📊 Debug Info</h4>
-    <div class="debug-item">
-        <span>Viewport:</span>
-        <strong id="viewport-size">0px</strong>
-    </div>
-    <div class="debug-item">
-        <span>Breakpoint:</span>
-        <strong id="current-breakpoint">Desktop</strong>
-    </div>
-    <div class="debug-item">
-        <span>Device:</span>
-        <strong id="device-type">Desktop</strong>
-    </div>
-    <div class="debug-item">
-        <span>Orientation:</span>
-        <strong id="orientation">Landscape</strong>
-    </div>
-</div>
+    <section class="hero" id="inicio">
+        <h1>🌟 Responsive Showcase</h1>
+        <p>Análisis de técnicas responsive en sitios web reales - femCodersClub</p>
+    </section>
 
-      
+    <div class="debug-panel">
+        <h4>📊 Debug Info</h4>
+        <div class="debug-item">
+            <span>Viewport:</span>
+            <strong id="viewport-size">0px</strong>
+        </div>
+        <div class="debug-item">
+            <span>Breakpoint:</span>
+            <strong id="current-breakpoint">Desktop</strong>
+        </div>
+        <div class="debug-item">
+            <span>Device:</span>
+            <strong id="device-type">Desktop</strong>
+        </div>
+        <div class="debug-item">
+            <span>Orientation:</span>
+            <strong id="orientation">Landscape</strong>
+        </div>
     </div>
 
     <div class="container">
         <div class="intro">
             <h2>🎯 Aprende Responsive Design con Ejemplos Reales</h2>
-            <p>En lugar de crear demos artificiales, analizamos sitios web que usas todos los días. Descubre cómo implementan responsive design las mejores empresas del mundo.</p>
-        </div>
+  <p>
+  Exploramos sitios web que usas a diario para descubrir cómo aplican el responsive design las mejores empresas del mundo.  
+  Este proyecto acompaña el post de FemCoders Club sobre diseño adaptativo:  
+  <a href="https://www.femcodersclub.com/recursos/css/responsive-design" target="_blank" rel="noopener">
+    femcodersclub.com/recursos/css/responsive-design
+  </a>
+</p>
+</div>
 
         <!-- Nivel Básico -->
-        <div class="section-header">
+        <section id="basico" class="section-header">
             <h2>📱 Nivel Básico: Fundamentos</h2>
             <p>Conceptos esenciales y comparación de enfoques</p>
-        </div>
+        </section>
 
         <div class="examples-grid">
             <div class="example-card">
@@ -86,10 +113,10 @@
         </div>
 
         <!-- Nivel Intermedio -->
-        <div class="section-header">
+        <section id="intermedio" class="section-header">
             <h2>🏗️ Nivel Intermedio: Layouts Flexibles</h2>
             <p>Técnicas de grid, flexbox e imágenes responsivas</p>
-        </div>
+        </section>
 
         <div class="examples-grid">
             <div class="example-card">
@@ -112,7 +139,7 @@
             <div class="example-card">
                 <div class="category-tag intermediate">Intermedio</div>
                 <h3>🖼️ Imágenes Responsivas</h3>
-                <p>Analiza cómo sitios como Unsplash y Instagram manejan imágenes que se ven perfectas en cualquier dispositivo.</p>
+                <p>Analiza cómo sitios como Unsplash e Instagram manejan imágenes que se ven perfectas en cualquier dispositivo.</p>
                 <div class="example-links">
                     <a href="https://unsplash.com" target="_blank" rel="noopener" class="example-link">
                         📷 Unsplash
@@ -145,20 +172,20 @@
         </div>
 
         <!-- Nivel Avanzado -->
-        <div class="section-header">
+        <section id="avanzado" class="section-header">
             <h2>🚀 Nivel Avanzado: Técnicas Modernas</h2>
             <p>Container queries, tipografía fluida y optimizaciones</p>
-        </div>
+        </section>
 
         <div class="examples-grid">
             <div class="example-card">
                 <div class="category-tag advanced">Avanzado</div>
                 <h3>📦 Container Queries</h3>
                 <p>La técnica más moderna de responsive design. Componentes que se adaptan a su contenedor, no al viewport.</p>
-                <div class="example-links">
-                    <a href="https://codepen.io/una/pen/mdqNbBQ" target="_blank" rel="noopener" class="example-link">
-                        🎨 Demo de Una Kravets
-                    </a>
+               <div class="example-links">
+  <a href="https://codepen.io/una/pen/mdOgyVL" target="_blank" rel="noopener" class="example-link">
+    🎨 Responsive Component Demo — Immediate Parent (Una Kravets)
+  </a>
                     <a href="https://developer.chrome.com/blog/has-with-cq-m105/" target="_blank" rel="noopener" class="example-link">
                         🌐 Chrome Developers
                     </a>
@@ -221,10 +248,10 @@
         </div>
 
         <!-- Recursos Extra -->
-        <div class="section-header">
+        <section id="recursos" class="section-header">
             <h2>🎁 Recursos Extra</h2>
             <p>Herramientas, guías y comunidades para seguir aprendiendo</p>
-        </div>
+        </section>
 
         <div class="examples-grid">
             <div class="example-card">
@@ -262,59 +289,61 @@
             </div>
         </div>
     </div>
-<footer class="footer">
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-main">
-                <div class="footer-logo">
-                    <h3>🌟 ResponsiveShowcase</h3>
-                    <p>Proyecto educativo para aprender responsive design con ejemplos reales</p>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-section">
-                        <h4>Aprende</h4>
-                        <ul>
-                            <li><a href="#basico">Nivel Básico</a></li>
-                            <li><a href="#intermedio">Nivel Intermedio</a></li>
-                            <li><a href="#avanzado">Nivel Avanzado</a></li>
-                            <li><a href="#recursos">Recursos</a></li>
-                        </ul>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <h3>🌟 ResponsiveShowcase</h3>
+                        <p>Proyecto educativo para aprender responsive design con ejemplos reales</p>
                     </div>
-                    <div class="footer-section">
-                        <h4>Comunidad</h4>
-                        <ul>
-                            <li><a href="https://femcodersclub.com" target="_blank" rel="noopener">🚀 femCodersClub</a></li>
-                            <li><a href="https://www.femcodersclub.com/blog/recursos" target="_blank" rel="noopener">📚 Reursos</a></li>
-                            <li><a href="https://femcodersclub.com/eventos" target="_blank" rel="noopener">🎉 Eventos</a></li>
-                            <li><a href="https://femcodersclub.com/blog" target="_blank" rel="noopener">✍️ Blog</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-section">
-                        <h4>Síguenos</h4>
-                        <ul>
-                            <li><a href="https://www.instagram.com/femcoders_club/" target="_blank" rel="noopener">📷 Instagram</a></li>
-                            <li><a href="https://www.linkedin.com/company/100394366/" target="_blank" rel="noopener">💼 LinkedIn</a></li>
-                            <li><a href="https://x.com/femcodersclub" target="_blank" rel="noopener">🕎 X</a></li>
-                            <li><a href="https://github.com/femcodersclub" target="_blank" rel="noopener">🐙 GitHub</a></li>
-                        </ul>
+                    <div class="footer-links">
+                        <div class="footer-section">
+                            <h4>Aprende</h4>
+                            <ul>
+                                <li><a href="#basico">Nivel Básico</a></li>
+                                <li><a href="#intermedio">Nivel Intermedio</a></li>
+                                <li><a href="#avanzado">Nivel Avanzado</a></li>
+                                <li><a href="#recursos">Recursos</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-section">
+                            <h4>Comunidad</h4>
+                            <ul>
+                                <li><a href="https://femcodersclub.com" target="_blank" rel="noopener">🚀 femCodersClub</a></li>
+                                <li><a href="https://www.femcodersclub.com/blog/recursos" target="_blank" rel="noopener">📚 Recursos</a></li>
+                                <li><a href="https://femcodersclub.com/eventos" target="_blank" rel="noopener">🎉 Eventos</a></li>
+                                <li><a href="https://femcodersclub.com/blog" target="_blank" rel="noopener">✍️ Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-section">
+                            <h4>Síguenos</h4>
+                            <ul>
+                                <li><a href="https://www.instagram.com/femcoders_club/" target="_blank" rel="noopener">📷 Instagram</a></li>
+                                <li><a href="https://www.linkedin.com/company/100394366/" target="_blank" rel="noopener">💼 LinkedIn</a></li>
+                                <li><a href="https://x.com/femcodersclub" target="_blank" rel="noopener">🕎 X</a></li>
+                                <li><a href="https://github.com/femcodersclub" target="_blank" rel="noopener">🐙 GitHub</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="footer-credits">
-                    <p>Hecho con 💜 por <a href="https://femcodersclub.com" target="_blank" rel="noopener" class="femcoders-link">femCodersClub</a></p>
-                    <p>© 2025 ResponsiveShowcase - Material educativo gratuito</p>
-                </div>
-                <div class="footer-tech">
-                    <span class="tech-badge">HTML</span>
-                    <span class="tech-badge">CSS</span>
-                    <span class="tech-badge">JavaScript</span>
-                    <span class="tech-badge">Responsive</span>
+                <div class="footer-bottom">
+                    <div class="footer-credits">
+                        <p>Hecho con 💜 por <a href="https://femcodersclub.com" target="_blank" rel="noopener" class="femcoders-link">femCodersClub</a></p>
+                        <p>© 2025 ResponsiveShowcase - Material educativo gratuito</p>
+                    </div>
+                    <div class="footer-tech">
+                        <span class="tech-badge">HTML</span>
+                        <span class="tech-badge">CSS</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">Responsive</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
+
     <script src="main.js"></script>
 </body>
 </html>
